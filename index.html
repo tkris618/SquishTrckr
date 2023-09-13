@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <!-- font awesome css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+     <!--CSS-->
+     <link rel="stylesheet" href="index.css">
+     
+</head>
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                   <h1><i class="fa-solid fa-compass fa-md" id="newSquish"></i>SQUISH TRACKR</h1>
+            </a>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-plus"></i>NEW SQUISH
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">New Squish</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <input type="file" class="col-sm-4 form-control" id="myFile" name="filename">
+                <div class="mb-3">
+                    <label class="col-sm-2">Name: </label>
+                    <input class="form-control" type="text" id="name">
+                </div>
+                <div class="mb-3">
+                    <label class="col-sm-2">Category: </label>
+                    <select class="form-select" aria-label="Default sleect example">
+                        <option selected>Select category...</option>
+                        <option value="1">Animal</option>
+                        <option value="2">Aquatic Animal</option>
+                        <option value="3">Insect</option>
+                        <option value="4">Bird</option>
+                        <option value="5">Monster</option>
+                    </select>
+                </div>
+                
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+<!--Header image-->
+
+<div class="row-header">
+    <div class="col text-center headerImgContainer">
+        <!--Image borrowed for educational purposes-->
+        <!--Source: -->
+        <img src="Squish_Website_Banner.png.webp" class="header-img container-fluid">
+    </div>
+</div>
+
+    <!--Content-->
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="d-flex flex-wrap justify-content-center mt-5">
+            <button type="button" class="btn btn-bd-primary active-filter-btn m-3 btn-lg">Favorite</button>
+            <button type="button" class="btn btn-bd-primary m-3 btn-lg">Have It</button>
+            <button type="button" class="btn btn-bd-primary m-3 btn-lg">Want It</button>
+        </div>
+        <div class="collection-list mt-4 row gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="blueMOOON.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Clayton</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="strawberryMilki.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Reshma</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="ronnieCow.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Ronnie</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="flyingSqrl.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Steph</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="badger.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Mita</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="seacow.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Mita</p>
+                        <p class="fw-bold">Category: Aquatic animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="stringRay.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Maggie</p>
+                        <p class="fw-bold">Category: Aquatic animal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="collection-img position-relative">
+                    <img src="Squishmallow-Berko.png" class="w-100 blueMoo">
+                </div>
+                <div class="text-center">
+                    <div class="info mt-3">
+                        <p class="fw-bold">Name: Berko</p>
+                        <p class="fw-bold">Category: Animal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer Content-->
+<footer>
+    <h3 class="footerHeader">&copySquishTracker</h3>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</html>
